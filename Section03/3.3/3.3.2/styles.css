@@ -1,0 +1,15 @@
+#catpic {
+  height: 400px
+}
+
+h1 {
+  color: blue
+}
+
+h2{
+  color: pink
+}
+
+list > listItems {
+  color: purple
+}
