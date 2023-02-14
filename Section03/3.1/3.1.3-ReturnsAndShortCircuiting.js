@@ -6,7 +6,7 @@ function myNumberFunction() {
   num = num * 14;
   console.log(num);
   return num;
-} // if a function does not have a return it will return undefined
+}
 
 // change the function above to return a value
 
@@ -21,7 +21,20 @@ function shortCircuitFunction() {
 
 // ? will the following function short circuit?
 let height = 50;
+
+// No it will not short circuit because there are no return statements
 function checkCircusRides() {
+  if (height < 48) {
+    console.log("Take a ride on the carousel!");
+  }
+  if (height < 60) {
+    console.log("Try the bumper cars!");
+  }
+  console.log("Enjoy the roller coaster!");
+}
+
+// change the function above to use short circuiting
+function checkCircusRidesWithReturns() {
   if (height < 48) {
     return "Take a ride on the carousel!";
   }
@@ -30,6 +43,3 @@ function checkCircusRides() {
   }
   return "Enjoy the roller coaster!";
 }
-
-// change the function above to use short circuiting
-// we changed the console log statments into return statements
